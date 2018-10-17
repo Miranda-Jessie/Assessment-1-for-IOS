@@ -8,13 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import UIKit
 
+class ViewController: UIViewController {
+    @IBOutlet weak var Label: UILabel!
+    
+    @IBOutlet weak var TextField: UITextField!
+    
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+        Label.text = TextField.text
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    
 }
 
